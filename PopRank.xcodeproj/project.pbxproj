@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3BBBF88E248C907E78C40CF /* Pods_PopRank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4315C93F34506E06EA689100 /* Pods_PopRank.framework */; };
 		FEC012181D3569C800D4E1F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC012171D3569C800D4E1F1 /* AppDelegate.swift */; };
 		FEC0121A1D3569C800D4E1F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC012191D3569C800D4E1F1 /* ViewController.swift */; };
 		FEC0121D1D3569C800D4E1F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC0121B1D3569C800D4E1F1 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4315C93F34506E06EA689100 /* Pods_PopRank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PopRank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0C20B769701697AAF19F04E /* Pods-PopRank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopRank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PopRank/Pods-PopRank.debug.xcconfig"; sourceTree = "<group>"; };
+		CC0D01A6EEFC6B1E657282BD /* Pods-PopRank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PopRank.release.xcconfig"; path = "Pods/Target Support Files/Pods-PopRank/Pods-PopRank.release.xcconfig"; sourceTree = "<group>"; };
 		FEC012141D3569C800D4E1F1 /* PopRank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopRank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC012171D3569C800D4E1F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEC012191D3569C800D4E1F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3BBBF88E248C907E78C40CF /* Pods_PopRank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4D942A9AE77AB35B96AE580 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0C20B769701697AAF19F04E /* Pods-PopRank.debug.xcconfig */,
+				CC0D01A6EEFC6B1E657282BD /* Pods-PopRank.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E5446BFFA01867666FB58420 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4315C93F34506E06EA689100 /* Pods_PopRank.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FEC0120B1D3569C800D4E1F1 = {
 			isa = PBXGroup;
 			children = (
 				FEC012161D3569C800D4E1F1 /* PopRank */,
 				FEC012151D3569C800D4E1F1 /* Products */,
+				A4D942A9AE77AB35B96AE580 /* Pods */,
+				E5446BFFA01867666FB58420 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEC012261D3569C900D4E1F1 /* Build configuration list for PBXNativeTarget "PopRank" */;
 			buildPhases = (
+				69B307C3CAF8B4861A20CD16 /* [CP] Check Pods Manifest.lock */,
 				FEC012101D3569C800D4E1F1 /* Sources */,
 				FEC012111D3569C800D4E1F1 /* Frameworks */,
 				FEC012121D3569C800D4E1F1 /* Resources */,
+				A5C67F813456678DA0778C11 /* [CP] Embed Pods Frameworks */,
+				6EE7B9AB98B002BE6B741814 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69B307C3CAF8B4861A20CD16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6EE7B9AB98B002BE6B741814 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PopRank/Pods-PopRank-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5C67F813456678DA0778C11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PopRank/Pods-PopRank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FEC012101D3569C800D4E1F1 /* Sources */ = {
@@ -249,6 +324,7 @@
 		};
 		FEC012271D3569C900D4E1F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0C20B769701697AAF19F04E /* Pods-PopRank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PopRank/Info.plist;
@@ -260,6 +336,7 @@
 		};
 		FEC012281D3569C900D4E1F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC0D01A6EEFC6B1E657282BD /* Pods-PopRank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PopRank/Info.plist;
@@ -288,6 +365,7 @@
 				FEC012281D3569C900D4E1F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
