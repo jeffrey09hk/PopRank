@@ -13,6 +13,7 @@
 		FEC0121D1D3569C800D4E1F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC0121B1D3569C800D4E1F1 /* Main.storyboard */; };
 		FEC0121F1D3569C900D4E1F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC0121E1D3569C900D4E1F1 /* Assets.xcassets */; };
 		FEC012221D3569C900D4E1F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC012201D3569C900D4E1F1 /* LaunchScreen.storyboard */; };
+		FEF3F2851D36BBAA00D32947 /* webViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF3F2841D36BBAA00D32947 /* webViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FEC0121E1D3569C900D4E1F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEC012211D3569C900D4E1F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEC012231D3569C900D4E1F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEF3F2841D36BBAA00D32947 /* webViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				FEC0121E1D3569C900D4E1F1 /* Assets.xcassets */,
 				FEC012201D3569C900D4E1F1 /* LaunchScreen.storyboard */,
 				FEC012231D3569C900D4E1F1 /* Info.plist */,
+				FEF3F2841D36BBAA00D32947 /* webViewController.swift */,
 			);
 			path = PopRank;
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 				TargetAttributes = {
 					FEC012131D3569C800D4E1F1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 23A26X2S3G;
 					};
 				};
 			};
@@ -212,6 +216,7 @@
 			files = (
 				FEC0121A1D3569C800D4E1F1 /* ViewController.swift in Sources */,
 				FEC012181D3569C800D4E1F1 /* AppDelegate.swift in Sources */,
+				FEF3F2851D36BBAA00D32947 /* webViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,10 +332,13 @@
 			baseConfigurationReference = C0C20B769701697AAF19F04E /* Pods-PopRank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PopRank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.affixgrp.PopRank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -339,10 +347,13 @@
 			baseConfigurationReference = CC0D01A6EEFC6B1E657282BD /* Pods-PopRank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PopRank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.affixgrp.PopRank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
